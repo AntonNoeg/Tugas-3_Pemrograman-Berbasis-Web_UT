@@ -1,0 +1,80 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+@import 'bootstrap-icons/font/bootstrap-icons.min.css';
+
+:root {
+    --ut-blue: #0056b3;
+    --ut-dark-blue: #003366;
+    --ut-yellow: #ffc107;
+    --ut-bg: #f4f6f9;
+}
+
+body {
+    background-color: var(--ut-bg);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-ut {
+    background: linear-gradient(135deg, var(--ut-dark-blue), var(--ut-blue)) !important;
+}
+
+.navbar-ut .nav-link {
+    color: rgba(255, 255, 255, 0.85) !important;
+    transition: all 0.2s ease;
+}
+
+.navbar-ut .nav-link:hover,
+.navbar-ut .nav-link.router-link-active {
+    color: #ffffff !important;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+}
+
+.card-stat {
+    border: none;
+    border-radius: 12px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card-stat:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+}
+
+.icon-box {
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 20px;
+    border-left: 2px solid #e9ecef;
+}
+
+.timeline-item {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -26px;
+    top: 4px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background-color: var(--ut-blue);
+    border: 3px solid #fff;
+}
+
+.badge-status {
+    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
