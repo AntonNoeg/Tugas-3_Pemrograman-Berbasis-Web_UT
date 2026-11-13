@@ -2,7 +2,7 @@
 
 Proyek Sistem Informasi Tiras & Transaksi Bahan Ajar (SITTA) menggunakan Vue 3 dan Vite.
 
-## Struktur Folder Proyek
+## 🗂️ Struktur Folder Proyek
 
 ```text
 tugas3-sitta/
